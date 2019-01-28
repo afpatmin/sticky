@@ -1,6 +1,0 @@
-false
-angular_ast|lib/src/parser/reader.dart
-angular_ast|lib/src/scanner.dart
-angular_ast|lib/src/token/tokens.dart
-
-angular_ast|lib/src/recovery_protocol/angular_analyzer_protocol.dart

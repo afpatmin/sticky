@@ -6,7 +6,7 @@ environment:
 dependencies:
   angular: ^5.0.0
   sticky:
-    path: ../sticky
+    path: ..
   
 dev_dependencies:   
   sass_builder: ^2.1.2

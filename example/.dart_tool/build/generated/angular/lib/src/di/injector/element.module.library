@@ -1,7 +1,0 @@
-false
-meta|lib/meta.dart
-angular|lib/src/core/linker/app_view.dart
-angular|lib/src/di/injector/hierarchical.dart
-angular|lib/src/di/injector/injector.dart
-
-

@@ -14,6 +14,8 @@ class StickyHeader implements AfterViewInit, OnDestroy {
 
   int offset = 0;
 
+  int _previousOffset = 0;
+
   StreamSubscription<dom.Event> _scrollListener;
 
   StickyHeader() {
@@ -22,6 +24,10 @@ class StickyHeader implements AfterViewInit, OnDestroy {
 
   void _parseScroll(dom.Event e) {
     print('scrolling');
+    offset = dom.window.scrollY;
+    
+
+    _previousOffset = offset;
   }
 
   @override

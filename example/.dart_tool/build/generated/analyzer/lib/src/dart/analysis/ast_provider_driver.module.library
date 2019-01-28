@@ -1,8 +1,0 @@
-false
-analyzer|lib/dart/ast/ast.dart
-analyzer|lib/dart/element/element.dart
-analyzer|lib/src/dart/analysis/driver.dart
-analyzer|lib/src/dart/ast/utilities.dart
-analyzer|lib/src/dart/element/ast_provider.dart
-
-

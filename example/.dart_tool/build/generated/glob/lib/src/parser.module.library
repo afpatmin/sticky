@@ -1,7 +1,0 @@
-false
-path|lib/path.dart
-string_scanner|lib/string_scanner.dart
-glob|lib/src/ast.dart
-glob|lib/src/utils.dart
-
-

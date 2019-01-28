@@ -1,0 +1,12 @@
+# Pub
+.packages
+pubspec.lock
+.dart_tool
+example/.dart_tool
+
+# Build
+*.g.dart
+.build.manifest
+build/
+
+*.code-workspace

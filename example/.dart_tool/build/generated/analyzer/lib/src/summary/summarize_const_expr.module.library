@@ -1,8 +1,0 @@
-false
-analyzer|lib/dart/ast/ast.dart
-analyzer|lib/dart/ast/token.dart
-analyzer|lib/dart/element/type.dart
-analyzer|lib/src/summary/format.dart
-analyzer|lib/src/summary/idl.dart
-
-
