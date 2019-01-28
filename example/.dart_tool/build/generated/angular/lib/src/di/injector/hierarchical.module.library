@@ -1,0 +1,8 @@
+false
+angular|lib/src/runtime.dart
+meta|lib/meta.dart
+angular|lib/src/di/errors.dart
+angular|lib/src/di/injector/empty.dart
+angular|lib/src/di/injector/injector.dart
+
+

@@ -1,0 +1,7 @@
+false
+js|lib/js.dart
+js|lib/js_util.dart
+angular|lib/src/core/testability/testability.dart
+angular|lib/src/testability/js_api.dart
+
+

@@ -1,0 +1,8 @@
+false
+kernel|lib/ast.dart
+kernel|lib/text/ast_to_text.dart
+front_end|lib/src/scanner/token.dart
+front_end|lib/src/fasta/severity.dart
+front_end|lib/src/fasta/util/relativize.dart
+
+front_end|lib/src/fasta/fasta_codes_generated.dart

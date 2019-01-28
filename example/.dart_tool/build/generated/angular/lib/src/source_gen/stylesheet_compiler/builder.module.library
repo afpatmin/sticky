@@ -1,0 +1,7 @@
+false
+build|lib/build.dart
+angular_compiler|lib/cli.dart
+angular|lib/src/source_gen/common/names.dart
+angular|lib/src/source_gen/stylesheet_compiler/processor.dart
+
+

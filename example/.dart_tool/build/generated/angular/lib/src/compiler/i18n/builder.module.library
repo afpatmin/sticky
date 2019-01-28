@@ -1,0 +1,7 @@
+false
+angular_ast|lib/angular_ast.dart
+angular|lib/src/compiler/template_parser.dart
+angular|lib/src/compiler/i18n/message.dart
+angular|lib/src/compiler/i18n/metadata.dart
+
+

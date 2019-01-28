@@ -1,0 +1,9 @@
+false
+analyzer|lib/analyzer.dart
+analyzer|lib/dart/ast/token.dart
+dart_style|lib/src/argument_list_visitor.dart
+dart_style|lib/src/rule/argument.dart
+dart_style|lib/src/rule/rule.dart
+dart_style|lib/src/source_visitor.dart
+
+

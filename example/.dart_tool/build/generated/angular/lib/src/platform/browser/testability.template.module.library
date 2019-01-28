@@ -1,0 +1,10 @@
+false
+angular|lib/src/platform/browser/testability.dart
+js|lib/js.dart
+js|lib/js_util.dart
+angular|lib/src/core/testability/testability.dart
+angular|lib/src/testability/js_api.dart
+angular|lib/src/core/testability/testability.template.dart
+angular|lib/src/testability/js_api.template.dart
+
+

@@ -1,0 +1,7 @@
+false
+crypto|lib/src/digest.dart
+crypto|lib/src/hash.dart
+crypto|lib/src/hash_sink.dart
+crypto|lib/src/utils.dart
+
+

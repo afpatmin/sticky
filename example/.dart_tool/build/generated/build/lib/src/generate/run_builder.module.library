@@ -1,0 +1,13 @@
+false
+logging|lib/logging.dart
+build|lib/src/analyzer/resolver.dart
+build|lib/src/asset/id.dart
+build|lib/src/asset/reader.dart
+build|lib/src/asset/writer.dart
+build|lib/src/builder/build_step_impl.dart
+build|lib/src/builder/builder.dart
+build|lib/src/builder/logging.dart
+build|lib/src/resource/resource.dart
+build|lib/src/generate/expected_outputs.dart
+
+

@@ -1,0 +1,10 @@
+false
+collection|lib/collection.dart
+string_scanner|lib/string_scanner.dart
+source_span|lib/source_span.dart
+yaml|lib/src/style.dart
+yaml|lib/src/token.dart
+yaml|lib/src/utils.dart
+yaml|lib/src/yaml_exception.dart
+
+

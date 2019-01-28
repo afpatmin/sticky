@@ -1,0 +1,9 @@
+false
+angular|lib/src/core/di.dart
+angular|lib/src/di/reflector.dart
+angular|lib/src/core/change_detection/change_detection.dart
+angular|lib/src/core/linker/app_view.dart
+angular|lib/src/core/linker/app_view_utils.dart
+angular|lib/src/core/linker/view_ref.dart
+
+

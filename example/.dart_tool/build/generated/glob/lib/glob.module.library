@@ -1,0 +1,8 @@
+true
+path|lib/path.dart
+glob|lib/src/ast.dart
+glob|lib/src/list_tree.dart
+glob|lib/src/parser.dart
+glob|lib/src/utils.dart
+
+

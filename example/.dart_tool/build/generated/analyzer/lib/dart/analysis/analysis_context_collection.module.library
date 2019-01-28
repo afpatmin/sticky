@@ -1,0 +1,7 @@
+true
+analyzer|lib/dart/analysis/analysis_context.dart
+analyzer|lib/file_system/file_system.dart
+analyzer|lib/src/dart/analysis/analysis_context_collection.dart
+meta|lib/meta.dart
+
+

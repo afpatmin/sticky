@@ -1,0 +1,8 @@
+true
+path|lib/path.dart
+package_config|lib/packages.dart
+package_config|lib/packages_file.dart
+package_config|lib/src/packages_impl.dart
+package_config|lib/src/packages_io_impl.dart
+
+

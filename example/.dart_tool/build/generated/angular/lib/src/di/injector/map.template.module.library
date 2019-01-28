@@ -1,0 +1,11 @@
+false
+angular|lib/src/di/injector/map.dart
+meta|lib/meta.dart
+angular|lib/src/di/injector/empty.dart
+angular|lib/src/di/injector/hierarchical.dart
+angular|lib/src/di/injector/injector.dart
+angular|lib/src/di/injector/empty.template.dart
+angular|lib/src/di/injector/hierarchical.template.dart
+angular|lib/src/di/injector/injector.template.dart
+
+

@@ -1,0 +1,5 @@
+false
+angular_ast|lib/src/hash.dart
+
+angular_ast|lib/src/token/lexeme.dart
+angular_ast|lib/src/token/token_types.dart

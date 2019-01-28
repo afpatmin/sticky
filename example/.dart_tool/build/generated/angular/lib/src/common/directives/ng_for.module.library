@@ -1,0 +1,6 @@
+false
+angular|lib/core.dart
+angular|lib/src/core/change_detection/differs/default_iterable_differ.dart
+angular|lib/src/core/linker.dart
+
+

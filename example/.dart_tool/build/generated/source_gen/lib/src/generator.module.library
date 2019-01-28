@@ -1,0 +1,7 @@
+false
+analyzer|lib/dart/element/element.dart
+build|lib/build.dart
+source_gen|lib/src/library.dart
+source_gen|lib/src/span_for_element.dart
+
+

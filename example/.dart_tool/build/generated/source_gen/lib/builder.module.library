@@ -1,0 +1,8 @@
+true
+build|lib/build.dart
+glob|lib/glob.dart
+path|lib/path.dart
+source_gen|lib/src/utils.dart
+source_gen|lib/src/builder.dart
+
+

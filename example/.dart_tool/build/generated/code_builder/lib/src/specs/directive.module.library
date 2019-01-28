@@ -1,0 +1,7 @@
+false
+built_value|lib/built_value.dart
+meta|lib/meta.dart
+code_builder|lib/src/base.dart
+code_builder|lib/src/visitors.dart
+
+code_builder|lib/src/specs/directive.g.dart
