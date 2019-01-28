@@ -9,7 +9,7 @@ import 'package:angular/angular.dart';
     templateUrl: 'sticky_header.html',
     styleUrls: const ['sticky_header.css'],
     directives: const [coreDirectives])
-class StickyHeader implements AfterViewInit, OnDestroy {
+class StickyHeader implements OnDestroy {
   @Input()
   int height = 100;
 
@@ -28,9 +28,6 @@ class StickyHeader implements AfterViewInit, OnDestroy {
     offset = min(0, max(offset + delta, -height));
     _previousScrollY = scrollY;
   }
-
-  @override
-  void ngAfterViewInit() {}
 
   @override
   void ngOnDestroy() {
