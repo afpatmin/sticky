@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:html' as dom;
+import 'dart:math';
 
 import 'package:angular/angular.dart';
 
@@ -13,21 +14,19 @@ class StickyHeader implements AfterViewInit, OnDestroy {
   int height = 100;
 
   int offset = 0;
-
-  int _previousOffset = 0;
-
+  int _previousScrollY = 0;
   StreamSubscription<dom.Event> _scrollListener;
 
   StickyHeader() {
     _scrollListener = dom.document.onScroll.listen(_parseScroll);
   }
 
-  void _parseScroll(dom.Event e) {
-    print('scrolling');
-    offset = dom.window.scrollY;
-    
+  int get scrollY => dom.window.scrollY;
 
-    _previousOffset = offset;
+  void _parseScroll(dom.Event e) {
+    final delta = _previousScrollY - scrollY;
+    offset = min(0, max(offset + delta, -height));
+    _previousScrollY = scrollY;
   }
 
   @override
