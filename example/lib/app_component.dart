@@ -1,5 +1,5 @@
 import 'package:angular/angular.dart';
-import 'package:sticky/sticky_header.dart';
+import 'package:sticky/sticky_header/sticky_header.dart';
 
 @Component(
   selector: 'app',

@@ -1,0 +1,23 @@
+@import 'mixins';
+
+:host {
+  display: block;
+}
+
+:host>div {  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: box-shadow 0.2s ease;
+  -webkit-transition: box-shadow 0.2s ease;
+  -moz-transition: box-shadow 0.2s ease;
+  -ms-transition: box-shadow 0.2s ease;
+  -o-transition: box-shadow 0.2s ease;
+}
+
+:host>div.shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+  

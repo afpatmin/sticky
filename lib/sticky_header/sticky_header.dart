@@ -30,11 +30,10 @@ class StickyHeader implements AfterViewInit, OnDestroy {
   }
 
   @override
-  void ngAfterViewInit() {    
-  }
+  void ngAfterViewInit() {}
 
   @override
   void ngOnDestroy() {
-    _scrollListener?.cancel();  
+    _scrollListener?.cancel();
   }
 }

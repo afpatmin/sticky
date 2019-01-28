@@ -1,4 +1,10 @@
+@import 'package:sticky/sticky_header/mixins';
+
 :host {
   display: block;
   height: 200rem;
+  overflow: hidden;
+
+  @include sticky-header-background-color(white);
+  
 } 
