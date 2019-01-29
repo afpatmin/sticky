@@ -1,5 +1,5 @@
 @mixin sticky-header-background-color($color) {
-  ::ng-deep sticky-header>div {
+  sticky-header {
     background-color: $color;
   }
 }

@@ -9,15 +9,16 @@ import 'package:angular/angular.dart';
     templateUrl: 'sticky_header.html',
     styleUrls: const ['sticky_header.css'],
     directives: const [coreDirectives])
-class StickyHeader implements OnDestroy {
+class StickyHeader implements AfterChanges, OnDestroy {
   @Input()
-  int height = 100;
+  int height;
 
   int offset = 0;
   int _previousScrollY = 0;
   StreamSubscription<dom.Event> _scrollListener;
+  final dom.Element _host;
 
-  StickyHeader() {
+  StickyHeader(this._host) {
     _scrollListener = dom.document.onScroll.listen(_parseScroll);
   }
 
@@ -25,12 +26,24 @@ class StickyHeader implements OnDestroy {
 
   void _parseScroll(dom.Event e) {
     final delta = _previousScrollY - scrollY;
-    offset = min(0, max(offset + delta, -height));
+    offset = min(0, max(offset + delta, -height));    
+    _host.style.top = '${offset}px';
+    if (scrollY == 0) {
+      _host.classes.remove('shadow');
+    } else if (!_host.classes.contains('shadow')) {
+      _host.classes.add('shadow');
+    }
+
     _previousScrollY = scrollY;
   }
 
   @override
   void ngOnDestroy() {
     _scrollListener?.cancel();
+  }
+
+  @override
+  void ngAfterChanges() {
+    _host.style.height = '${height}px';
   }
 }
