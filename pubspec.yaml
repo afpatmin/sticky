@@ -7,5 +7,4 @@ dependencies:
   angular: ^5.2.0
   sass_builder: ^2.1.2
   
-dev_dependencies:   
-  
+dev_dependencies:
