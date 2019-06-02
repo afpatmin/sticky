@@ -25,16 +25,18 @@ class StickyHeader implements AfterChanges, OnDestroy {
   int get scrollY => dom.window.scrollY;
 
   void _parseScroll(dom.Event e) {
-    final delta = _previousScrollY - scrollY;
-    offset = min(0, max(offset + delta, -height));    
-    _host.style.top = '${offset}px';
-    if (scrollY == 0) {
-      _host.classes.remove('shadow');
-    } else if (!_host.classes.contains('shadow')) {
-      _host.classes.add('shadow');
-    }
+    if (scrollY >= 0) {
+      final delta = _previousScrollY - scrollY;
+      offset = min(0, max(offset + delta, -height));
+      _host.style.top = '${offset}px';
+      if (scrollY == 0) {
+        _host.classes.remove('shadow');
+      } else if (!_host.classes.contains('shadow')) {
+        _host.classes.add('shadow');
+      }
 
-    _previousScrollY = scrollY;
+      _previousScrollY = scrollY;
+    }
   }
 
   @override
