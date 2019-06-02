@@ -4,8 +4,5 @@ environment:
   sdk: '>=2.0.0 <3.0.0'
 
 dependencies:
-  angular: ^5.2.0
-  sass_builder: ^2.1.2
-  
-dev_dependencies:   
-  
+  angular: ^6.0.0-alpha
+  sass_builder: ^2.1.3
