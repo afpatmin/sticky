@@ -8,7 +8,7 @@
 
   @include sticky-header-background-color(white);
   @include sticky-popin-background-color(white);
-  @include sticky-popin-height(50%);
+  @include sticky-popin-height(100px);
   div#flexContainer {
     padding: 200px;
     border: 1px solid black;

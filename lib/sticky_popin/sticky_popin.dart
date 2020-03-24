@@ -10,7 +10,9 @@ import 'package:angular/angular.dart';
     directives: [NgClass, NgStyle],
     providers: [])
 class StickyPopin implements OnInit, OnDestroy {
-  StreamController<bool> _visibleChangeController = StreamController<bool>();
+  final StreamController<bool> _visibleChangeController =
+      StreamController<bool>();
+
   @ViewChild('content')
   dom.DivElement content;
 
@@ -27,6 +29,12 @@ class StickyPopin implements OnInit, OnDestroy {
   Stream<bool> get visibleChange => _visibleChangeController.stream;
 
   StickyPopin();
+
+  void onDrag(dom.Event event) {
+    if (visible == true) {
+      event.preventDefault();
+    }
+  }
 
   void onOverlayClick() {
     _visibleChangeController.add(false);

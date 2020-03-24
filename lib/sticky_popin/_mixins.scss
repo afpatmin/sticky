@@ -12,7 +12,7 @@
   ::ng-deep sticky-popin {
     div#overlay {
       div#content {
-        width: $value;
+        margin-left: $value;
       }
     }
   }
@@ -22,7 +22,7 @@
   ::ng-deep sticky-popin {
     div#overlay {
       div#content {
-        height: $value;
+        min-height: $value;
       }
     }
   }

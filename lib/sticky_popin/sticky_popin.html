@@ -1,6 +1,7 @@
 <div id="overlay"
      [class.hide]="visible != true"
-     (click)="onOverlayClick()">
+     (click)="onOverlayClick()"
+     (touchmove)="onDrag($event)">
   <div #content
        id="content"
        [ngStyle]="fixedStyle"
