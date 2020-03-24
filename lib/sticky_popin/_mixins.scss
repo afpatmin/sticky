@@ -1,0 +1,29 @@
+@mixin sticky-popin-background-color($color) {
+  ::ng-deep sticky-popin {
+    div#overlay {
+      div#content {
+        background-color: $color;
+      }
+    }
+  }
+}
+
+@mixin sticky-popin-width($value) {
+  ::ng-deep sticky-popin {
+    div#overlay {
+      div#content {
+        width: $value;
+      }
+    }
+  }
+}
+
+@mixin sticky-popin-height($value) {
+  ::ng-deep sticky-popin {
+    div#overlay {
+      div#content {
+        height: $value;
+      }
+    }
+  }
+}

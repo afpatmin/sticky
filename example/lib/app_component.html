@@ -10,4 +10,14 @@
 <h1>hej</h1>
 <h1>hej</h1>
 <h1>hej</h1>
-<h1>hej</h1>
+<p>{{visible}}</p>
+<h1 (click)="visible = true">hej</h1>
+<div id="flexContainer">
+  <div>
+
+    <sticky-popin position="bottom"
+                  [(visible)]="visible">
+      <p (click)="visible = false">hej</p>
+    </sticky-popin>
+  </div>
+</div>

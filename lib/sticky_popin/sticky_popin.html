@@ -1,0 +1,11 @@
+<div id="overlay"
+     [class.hide]="visible != true"
+     (click)="onOverlayClick()">
+  <div #content
+       id="content"
+       [ngStyle]="fixedStyle"
+       [style.transform]="transform"
+       (click)="$event.stopPropagation()">
+    <ng-content></ng-content>
+  </div>
+</div>

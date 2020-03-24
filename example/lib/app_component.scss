@@ -1,9 +1,20 @@
-@import 'package:sticky/sticky_header/mixins';
+@import "package:sticky/sticky_header/mixins";
+@import "package:sticky/sticky_popin/mixins";
 
 :host {
   display: block;
   height: 200rem;
   overflow: hidden;
 
-  @include sticky-header-background-color(white);  
-} 
+  @include sticky-header-background-color(white);
+  @include sticky-popin-background-color(white);
+  @include sticky-popin-height(50%);
+  div#flexContainer {
+    padding: 200px;
+    border: 1px solid black;
+    margin: 150px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+  }
+}
