@@ -25,5 +25,10 @@
     -moz-transition: -moz-transform 0.2s ease;
     -o-transition: -o-transform 0.2s ease;
     -ms-transition: -ms-transform 0.2s ease;
+    overflow: auto;
+    -ms-overflow-style: none;
+  }
+  div#content::-webkit-scrollbar {
+    display: none;
   }
 }
