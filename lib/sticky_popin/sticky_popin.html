@@ -1,11 +1,12 @@
 <div id="overlay"
-     [class.hide]="visible != true"
+     [class.isVisible]="visible"
      (click)="onOverlayClick()"
      (touchmove)="onDrag($event)">
   <div #content
        id="content"
        [ngStyle]="fixedStyle"
        [style.transform]="transform"
+       [class.isVisible]="visible"
        (click)="$event.stopPropagation()">
     <ng-content></ng-content>
   </div>
