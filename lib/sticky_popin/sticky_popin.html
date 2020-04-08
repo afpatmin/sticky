@@ -1,5 +1,5 @@
 <div id="overlay"
-     [class.hide]="visible != true"
+     [class.hide]="visible != true || overlay == false"
      (click)="onOverlayClick()"
      (touchmove)="onDrag($event)">
   <div #content

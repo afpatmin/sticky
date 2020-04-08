@@ -21,6 +21,9 @@ class StickyPopin implements OnInit, OnDestroy {
   @Input()
   bool visible = false;
 
+  @Input()
+  bool overlay = true;
+
   /// 'top', 'right', 'bottom', 'left'
   @Input()
   String position = 'bottom';
@@ -31,13 +34,15 @@ class StickyPopin implements OnInit, OnDestroy {
   StickyPopin();
 
   void onDrag(dom.Event event) {
-    if (visible == true) {
+    if (visible == true && overlay == true) {
       event.preventDefault();
     }
   }
 
   void onOverlayClick() {
-    _visibleChangeController.add(false);
+    if (overlay == true) {
+      _visibleChangeController.add(false);
+    }
   }
 
   String get transform {
