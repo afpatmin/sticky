@@ -18,6 +18,7 @@
     pointer-events: all;
     background-color: rgba(0, 0, 0, 0.3);
   }
+
   div#content {
     position: absolute;
     background-color: white;
@@ -28,6 +29,7 @@
     -ms-transition: -ms-transform 0.2s ease;
     visibility: hidden;
     -ms-overflow-style: none;
+    pointer-events: all;
   }
   div#content::-webkit-scrollbar {
     display: none;
