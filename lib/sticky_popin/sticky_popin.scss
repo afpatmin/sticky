@@ -5,7 +5,8 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    background-color: transparent;
     z-index: 999;
     transition: background-color 0.2s ease;
     -webkit-transition: background-color 0.2s ease;
@@ -13,9 +14,9 @@
     -o-transition: background-color 0.2s ease;
     -ms-transition: background-color 0.2s ease;
   }
-  div#overlay.hide {
-    pointer-events: none;
-    background-color: transparent;
+  div#overlay.isVisible {
+    pointer-events: all;
+    background-color: rgba(0, 0, 0, 0.3);
   }
   div#content {
     position: absolute;
@@ -25,10 +26,14 @@
     -moz-transition: -moz-transform 0.2s ease;
     -o-transition: -o-transform 0.2s ease;
     -ms-transition: -ms-transform 0.2s ease;
-    overflow: auto;
+    visibility: hidden;
     -ms-overflow-style: none;
   }
   div#content::-webkit-scrollbar {
     display: none;
+  }
+  div#content.isVisible {
+    visibility: visible;
+    overflow: auto;
   }
 }
