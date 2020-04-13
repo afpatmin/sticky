@@ -27,7 +27,6 @@
     -moz-transition: -moz-transform 0.2s ease;
     -o-transition: -o-transform 0.2s ease;
     -ms-transition: -ms-transform 0.2s ease;
-    visibility: hidden;
     -ms-overflow-style: none;
     pointer-events: all;
   }
@@ -35,7 +34,6 @@
     display: none;
   }
   div#content.isVisible {
-    visibility: visible;
     overflow: auto;
   }
 }
