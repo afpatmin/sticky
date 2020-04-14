@@ -1,5 +1,6 @@
 <div id="overlay"
      [class.isVisible]="visible == true && overlay == true"
+     [class.animate]="animate"
      (click)="onOverlayClick()"
      (touchmove)="onDrag($event)">
   <div #content

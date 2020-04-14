@@ -8,6 +8,8 @@
     pointer-events: none;
     background-color: transparent;
     z-index: 999;
+  }
+  div#overlay.animate {
     transition: background-color 0.2s ease;
     -webkit-transition: background-color 0.2s ease;
     -moz-transition: background-color 0.2s ease;
