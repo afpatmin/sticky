@@ -22,18 +22,18 @@
   div#content {
     position: absolute;
     background-color: white;
+    -ms-overflow-style: none;
+    pointer-events: all;
+    overflow: auto;
+  }
+  div#content.animate {
     transition: transform 0.2s ease;
     -webkit-transition: -webkit-transform 0.2s ease;
     -moz-transition: -moz-transform 0.2s ease;
     -o-transition: -o-transform 0.2s ease;
     -ms-transition: -ms-transform 0.2s ease;
-    -ms-overflow-style: none;
-    pointer-events: all;
   }
   div#content::-webkit-scrollbar {
     display: none;
-  }
-  div#content.isVisible {
-    overflow: auto;
   }
 }

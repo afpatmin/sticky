@@ -13,6 +13,9 @@ class StickyPopin implements OnInit, OnDestroy {
   final StreamController<bool> _visibleChangeController =
       StreamController<bool>();
 
+  bool _animate = false;
+  bool get animate => _animate;
+
   @ViewChild('content')
   dom.DivElement content;
 
@@ -105,6 +108,9 @@ class StickyPopin implements OnInit, OnDestroy {
       default:
         break;
     }
+    Future.delayed(const Duration(milliseconds: 200)).then((_) {
+      _animate = true;
+    });
   }
 
   @override

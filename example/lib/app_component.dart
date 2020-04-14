@@ -10,5 +10,5 @@ import 'package:sticky/sticky_popin/sticky_popin.dart';
 class AppComponent {
   AppComponent();
 
-  bool visible = true;
+  bool visible = false;
 }
