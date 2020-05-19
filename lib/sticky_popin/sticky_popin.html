@@ -8,7 +8,7 @@
        [ngStyle]="fixedStyle"
        [style.transform]="transform"
        [class.animate]="animate"
-       (touchStart)="$event.stopPropagation()"
+       (touchstart)="$event.stopPropagation()"
        (click)="$event.stopPropagation()">
     <ng-content></ng-content>
   </div>
