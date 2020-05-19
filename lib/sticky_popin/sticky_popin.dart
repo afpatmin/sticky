@@ -36,14 +36,6 @@ class StickyPopin implements OnInit, OnDestroy {
 
   StickyPopin();
 
-  void onDrag(dom.Event event) {
-    if (visible == true && overlay == true) {
-      event
-        ..preventDefault()
-        ..stopPropagation();
-    }
-  }
-
   void onOverlayClick() {
     if (overlay == true) {
       _visibleChangeController.add(false);
