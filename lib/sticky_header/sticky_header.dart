@@ -11,7 +11,7 @@ import 'package:angular/angular.dart';
     directives: const [coreDirectives])
 class StickyHeader implements AfterChanges, OnDestroy {
   @Input()
-  int height;
+  late int height;
 
   /// Hide when scrolling down
   @Input()
@@ -19,7 +19,7 @@ class StickyHeader implements AfterChanges, OnDestroy {
 
   int offset = 0;
   int _previousScrollY = 0;
-  StreamSubscription<dom.Event> _scrollListener;
+  StreamSubscription<dom.Event>? _scrollListener;
   final dom.Element _host;
 
   StickyHeader(this._host) {

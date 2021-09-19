@@ -17,7 +17,7 @@ class StickyPopin implements OnInit, OnDestroy {
   bool get animate => _animate;
 
   @ViewChild('content')
-  dom.DivElement content;
+  dom.DivElement? content;
 
   Map<String, String> fixedStyle = {};
 
@@ -46,7 +46,7 @@ class StickyPopin implements OnInit, OnDestroy {
     if (content == null || visible == true) {
       return '';
     }
-    final rect = content.getBoundingClientRect();
+    final rect = content!.getBoundingClientRect();
 
     switch (position) {
       case 'top':
