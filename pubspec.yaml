@@ -1,8 +1,8 @@
 name: sticky
 version: 0.1.0
 environment:
-  sdk: ">=2.13.0 <3.0.0"
+  sdk: ">=2.14.0 <3.0.0"
 
 dependencies:
-  angular: ^7.0.0
+  angular: ^7.0.2
   sass_builder: ^2.1.4
