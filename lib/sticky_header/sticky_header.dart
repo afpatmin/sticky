@@ -2,13 +2,13 @@ import 'dart:async';
 import 'dart:html' as dom;
 import 'dart:math';
 
-import 'package:angular/angular.dart';
+import 'package:ngdart/angular.dart';
 
 @Component(
     selector: 'sticky-header',
     templateUrl: 'sticky_header.html',
-    styleUrls: const ['sticky_header.css'],
-    directives: const [coreDirectives])
+    styleUrls: ['sticky_header.css'],
+    directives: [coreDirectives])
 class StickyHeader implements AfterChanges, OnDestroy {
   @Input()
   late int height;
@@ -28,7 +28,7 @@ class StickyHeader implements AfterChanges, OnDestroy {
 
   int get scrollY => dom.window.scrollY;
 
-  void _parseScroll(dom.Event e) {  
+  void _parseScroll(dom.Event e) {
     if (scrollY >= 0) {
       if (hide == true) {
         final delta = _previousScrollY - scrollY;
